@@ -231,7 +231,7 @@ export const handler() {
   // So far 2 events are queued but not sent
 
   // Calling shutdown, flushed the queue but batched into 1 API call for maximum efficiency
-  await posthog.shutdownAsync()
+  await client.shutdownAsync()
 }
 ```
 
